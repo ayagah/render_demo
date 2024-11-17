@@ -1,0 +1,16 @@
+{% extends 'master.html' %}
+
+
+{% block title%}
+Details about{{student.name}} {{student.roll_number}}
+{% endblock%}
+
+    {% block content%}
+    <div class="mycard">
+    <h1>{{students.name}}</h1>
+    <h2>{{students.roll_number}}</h2>
+    <p>Member since{{students.date_registered}}</p>
+    <p>Back to <a href="/students">Students</a></p>
+</div>
+    {% endblock%}
+    

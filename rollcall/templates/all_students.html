@@ -1,0 +1,16 @@
+{% extends 'master.html'%}
+{% block title%}
+    My students-List of all students
+{% endblock%}
+
+{% block content%}
+<div class="mycard">
+    <h1>Students List</h1>
+
+   <ul>
+    {% for x in students%}
+      <li onclick="window.location='details/{{x.id}}'">{{x.name}} </li>
+    {% endfor %}
+   </ul>
+</div>
+   {% endblock%}
